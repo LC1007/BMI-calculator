@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.mt{
+    margin: 1rem 0;
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: clamp(1rem, 2vw,2rem);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;  
+}
+
+.bmi-cal{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #EBEBEB;
+    padding: 4rem;
+    height: 100%;
+    border-top: 20px solid blue;
+    border-left: 10px solid blue;
+    border-right: 10px solid blue;
+    border-bottom: 10px solid blue;
+    resize: both;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.weight, 
+.height{
+    margin: 1rem 0;
+}
+
+.buttons{
+    display: flex;
+}
+
+#btn,
+#btnReset{
+    border: none;
+    width: 50%;
+    margin: 1rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    transition: ease 250ms;
+    font-size: clamp(.7rem, 2vw,1rem);
+}
+
+#btn:hover,
+#btnReset:hover{
+    background-color: white;
+    color: black;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: 90.7px;
+    left: 69px;
+    color: white;
+    font-size: .9rem;
+    margin-top: .1rem;
+}
+
+.icons i{
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.popup{
+    display: none;
+}
+
+.wrapper{
+    background-color: blue;
+    width: 20%;
+    position: relative;
+    bottom: 26.8rem;
+    left: 38rem;
+}
+
+.show{
+    display: block;
+}
+
+@media (width < 378px) {
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
